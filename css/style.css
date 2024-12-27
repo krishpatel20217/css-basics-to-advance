@@ -1,0 +1,214 @@
+/* universal selector */
+/* *{} */
+
+
+/* element selector */
+/* h1{
+    color: black;          /* colour can be given using RGB system and hexadecimal system 
+    background-color: aqua;
+} */
+/* id selector */
+#one{
+    background-color: blueviolet;
+}
+/* class selector*/
+.two{
+    background-color: brown;
+}
+#three{
+    text-align: center;                   /* text align property: right/center/left*/
+    text-decoration: underline;           /* text decoration property:underline /linethrow/overline*/
+}
+#four{
+    font-weight: bolder;            /*normal/bold/bolder/lighter  100-900      */
+    font-family: 'Courier New', Courier, monospace;  /*font family*/
+     line-height: 1px;                                  /*line height*/
+     text-transform: uppercase;                         /*text transform*/
+
+}
+#six{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;    /* br width /border style/border colour*/
+    border-radius: 50%;
+    background-color: pink;
+    /* in box model  height:text height
+    /width:text width
+    /border:border of padding
+    /padding: space bettn content and border
+    /margin: space betten two element */
+}
+/*  display: inline/block/inline-block(simillarly to inline but we can set marjin ND Padding)/none*/
+/*visibility:hidden*/
+/* RGBA(225,225,225,0-1) a is alpha chanel which is opacity */
+/*RELATIVES unit   :-% / em / rem / vh / vw*/
+
+/*
+position:static
+/relative:relative to it self
+/absolute:position related to its closest ansistor
+/fixed:position related to its browser
+/stick: totaly stick*/
+
+/*top/botoom/right/left/z-index*/
+/*
+back ground image: background size cover/contain/auto
+*/
+div{
+    display: inline-block;
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+}
+#box1{
+    background-color: blue;
+    background-image: url("https://plus.unsplash.com/premium_photo-1683910767532-3a25b821f7ae?q=80&w=508&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: auto;
+    
+    top: 100px;
+    position: relative;
+}
+#box2{
+    background-image: url("https://plus.unsplash.com/premium_photo-1683910767532-3a25b821f7ae?q=80&w=508&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: contain;
+    
+    top: 300px;
+    background-color: blueviolet;
+    position: absolute;
+}
+#box3{
+    background-image: url("https://plus.unsplash.com/premium_photo-1683910767532-3a25b821f7ae?q=80&w=508&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    
+    background-color: brown;
+    top: 500px;
+    position: fixed;
+}
+#box4{
+    background-color: cadetblue;
+    top: 100px;
+    position: sticky;
+}
+/*----0-0----------------------------------------------------------------*/
+body{
+    text-align: center;
+}
+div{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 2px solid black;
+}
+#container{
+    width: 800px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#box5{
+    background-color: chartreuse;
+}
+#box6{
+    background-color: blanchedalmond;
+}
+#box7{
+    background-color: blue;
+}
+#box8{
+    background-color: blue;
+}
+#box9{
+    background-color: brown;
+}
+/*1. flex box direction:row/rowreverse/column/columnreverse
+2. justify content:flexstrat/flexend/center/spacearound*/
+
+
+
+
+
+/* media query */
+@media(min-width:200px)and(min-width:300px){
+    div{
+        background-color: black;
+    }
+}
+
+
+
+
+
+/*-----------------------------------------------------------------*/
+/* tramsition property */
+/* div{
+    
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    transition: all 2s ease-in 1s;                /*transition*/
+    /* transform: rotate(45deg);   */
+    /* transform: scale(2); */
+    /* transform: translate(200px); */
+/* }
+div:hover{
+    background-color: blueviolet;
+}
+div:active{
+    background-color: brown;
+} */ 
+
+
+
+
+/* transition 
+1.transition property fontsize width etc
+2.transition duration;2s
+3.transitoin timing function:ease-in/ease-out/liner/steps
+transition delay: 2s/4ms*/
+/*
+transform
+
+rotate
+scale
+translate   it will move from centre
+skew
+
+
+
+
+*/
+
+/* animations
+
+animation: name_of_animation
+  /animation_duration 
+  /animation_timing_function 
+  /delay_time 
+  /iteration
+ /animation direction
+
+
+
+
+*/
+#ttt{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: name1 5s ease-in 1s infinite ;
+}
+@keyframes name1{
+    0%{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+100%{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+}
